@@ -3,8 +3,23 @@
 <title></title>
 </head>
 <body>
-		<h1>AITTunes</h1>
-		{{{Recommended Bandz Add a band recommendation}}}
+		<h1><center>AITTunes<center/></h1>
+      <hr>
+
+      <form method="GET" action="/"><center>
+        <input type="radio" name="filterGenre" value="Rock"> Rock
+        <input type="radio" name="filterGenre" value="Pop"> Pop
+        <input type="radio" name="filterGenre" value="Hip-Hop"> Hip-Hop
+        <input type="radio" name="filterGenre" value="Electronic"> Electronic
+        <input type="radio" name="filterGenre" value="Metal"> Metal
+        <input type="radio" name="filterGenre" value="Jazz"> Jazz
+        <input type="submit" value="Filter by genre">
+      </form><center/>
+      <hr>
+
+		<center>Recommended Bandz<center/><br/>
+      <hr>
+    <center>Add a band recommendation<center/><br/>
 </body>
 </html>
 
@@ -15,37 +30,33 @@
 {{/each}}
 </ul>
 
-<form method="GET" action="/">
-	<input type="submit" name="filterGenre">
-  <input type="submit" value="Rock">
-	<input type="submit" value="Pop">
-  <input type="submit" value="Hip-Hop">
-  <input type="submit" value="Electronic">
-  <input type="submit" value="Metal">
-  <input type="submit" value="Jazz">
-</form>
+
 
 <form method="POST" action="/">
-	bandName: <input type="text" name="Band name">
-	<input type="submit">
+	Band name: <input type="text" name="Band name">
 </form>
-
+<br>
 <form method="POST" action="/">
 	Location: <input type="text" name="Location">
-	<input type="submit">
 </form>
-
+<br>
 <form method="POST" action="/">
 	Description: <input type="text" name="Description">
-	<input type="submit">
 </form>
+<br>
 
 <form method="POST" action="/">
-  <input type="submit" name="filterGenre">
-  <input type="submit" value="Rock">
-	<input type="submit" value="Pop">
-  <input type="submit" value="Hip-Hop">
-  <input type="submit" value="Electronic">
-  <input type="submit" value="Metal">
-  <input type="submit" value="Jazz">
+  <input type="radio" name="filterGenre" value="Rock"> Rock
+  <input type="radio" name="filterGenre" value="Pop"> Pop
+  <br>
+  <br>
+  <input type="radio" name="filterGenre" value="Hip-Hop"> Hip-Hop
+  <input type="radio" name="filterGenre" value="Electronic"> Electronic
+  <br>
+  <br>
+  <input type="radio" name="filterGenre" value="Metal"> Metal
+  <input type="radio" name="filterGenre" value="Jazz"> Jazz
+  <br>
+  <br>
+  <input type="submit" value="Submit">
 </form>
