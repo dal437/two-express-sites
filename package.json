@@ -1,0 +1,24 @@
+{
+  "name": "dal437-homework04",
+  "version": "1.0.0",
+  "description": "Name: Diego Lanao\r NetID: dal437\r Project: Homework #04 - Express",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0480-003-fall-2017/dal437-homework04.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0480-003-fall-2017/dal437-homework04/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0480-003-fall-2017/dal437-homework04#readme",
+  "devDependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1",
+    "hbs": "^4.0.1"
+  }
+}
