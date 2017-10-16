@@ -12,12 +12,22 @@ app.use(function(req, res, next) {
    next();
 });
 
+const colors = {'8B0000': 'Dark Red'}
 
-/*app.get("/about", function (req, res) => {
-  res.send("Hey");
+app.get("/", (req, res) => {
+  res.redirect('/colors');
 });
 
-app.get("/", function (req, res) => {
+app.get("/colors", (req, res) => {
+  console.log(req.query);
+  res.render('layout.hbs', {});
+});
+
+app.get("/about", (req, res) => {
+  res.render('about.hbs');
+});
+
+/*app.get("/", function (req, res) => {
   res.redirect("/colors");
 });
 
