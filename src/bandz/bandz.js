@@ -25,19 +25,30 @@ description: "The lead vocalist went to MIT"},
 {name: "Coldplay",
 genre: "Pop",
 location: "Los Angeles, CA",
-description: "Clocks was one of their big hits"}];
+description: "Clocks was one of their big hits"}, {name: "Rapper School",
+genre: "Hip-Hop",
+location: "Lima, PE",
+description: "These guys are from my favorite country"}];
 
 
 app.get('/', (req, res) => {
-	res.render('layout.hbs');
+  let b = bands;
+  const f = req.query.filterGenre;
+  if (f){
+    b = b.filter(band => band.genre === f);
+  }
+	res.render('layout.hbs', {bands:b});
 });
 
-//'bands', {name : bands}
 
-/*app.post('/', (req, res) => {
-	bandName = req.body.name;
+app.post('/', (req, res) => {
+	const bandName = req.body.Bandname;
+  const bandLocation = req.body.Location;
+  const bandDescription = req.body.Description;
+  const bandGenre = req.body.filterGenre;
+  bands.push({name:bandName, genre:bandGenre, location:bandLocation, description: bandDescription});
 	res.redirect('/');
-});*/
+});
 
 
 app.listen(3000);
