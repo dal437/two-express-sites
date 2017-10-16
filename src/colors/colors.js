@@ -30,7 +30,7 @@ app.get("/colors", (req, res) => {
     res.render('home.hbs', {result:x});
   }
   else{
-    res.render('home.hbs', {err: 'Hey, "Red", "Green", and "Blue" should be from 0 through 255, and the "How Many?" should be between 2 and 10!'})
+    res.render('home.hbs', {err: 'Hey, "Red", "Green", and "Blue" should be from 0 through 255, and the "How Many?" should be between 2 and 10!'});
   }
 });
 

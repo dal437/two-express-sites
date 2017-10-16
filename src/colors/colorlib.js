@@ -3,7 +3,7 @@ const fs = require('fs');
 const colors = {};
 const z = fs.readFileSync('colors.txt', 'utf8');
 const w = z.split('\r\n');
-for (let s in w){
+for (const s in w){
   const parts = w[s].split(',');
   if (parts.length > 1){
     colors[parts[1]] = parts[0];

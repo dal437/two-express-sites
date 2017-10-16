@@ -1,4 +1,29 @@
-{
-	font-size: 2em;
-	color: #00ff00;
+body{
+	margin: 30px;
+	font-family: Georgia, serif;
+	color: #dc143c;
+	background-color: #ff8c00;
+}
+
+h1 {
+	color: #00008b;
+	font-size: 40px;
+}
+
+h2 {
+	color: #b22222;
+}
+
+div {
+	padding: 40px;
+	font-size: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: #32cd32;
+}
+
+a.hover {
+	color: #3cb371;
 }
