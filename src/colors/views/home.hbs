@@ -1,0 +1,13 @@
+<div><center>
+<form method="GET" action="/colors"><center>
+  Red: <input type="number" name="r">
+  Green: <input type="number" name="g">
+  Blue: <input type="number" name="b">
+  Total: <input type="number" name="total">
+  <input type="submit" value="Submit">
+  <center/></form>
+  {{#if err}} <h1>{{err}}</h1> {{/if}}
+  {{#each result}}
+  <li>{{this.name}} ({{this.decimal}}) #{{this.hexadecimal}}</li>
+  {{/each}}
+</center></div>
