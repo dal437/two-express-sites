@@ -6,13 +6,15 @@
 <body>
 		<h1><center>#HEXCUSE ME!<center></h1>
       <form method="GET" action="/colors"><center>
-        <input type="radio" name="filterGenre" value="Rock"> Rock
-        <input type="radio" name="filterGenre" value="Pop"> Pop
-        <input type="radio" name="filterGenre" value="Hip-Hop"> Hip-Hop
-        <input type="radio" name="filterGenre" value="Electronic"> Electronic
-        <input type="radio" name="filterGenre" value="Metal"> Metal
-        <input type="radio" name="filterGenre" value="Jazz"> Jazz
-        <input type="submit" value="Filter by genre">
-      </form><center/>
+        r: <input type="number" name="r">
+        g: <input type="number" name="g">
+        b: <input type="number" name="b">
+        total: <input type="number" name="total">
+        <input type="submit" value="Submit">
+      <center/></form>
+      {{#if err}} <h1>{{err}}</h1> {{/if}}
+      {{#each result}}
+      <li>{{this.name}} ({{this.decimal}}) #{{this.hexadecimal}}</li>
+      {{/each}}
 </body>
 </html>
